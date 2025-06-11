@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Nanito';
+    src: url('/fonts/Nunito-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nanito';
+    src: url('/fonts/Nunito-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nanito';
+    src: url('/fonts/Nunito-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F2F1EF;
+}
+
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+    scrollbar-gutter: stable;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+}
+
+body {
+    min-height: 100%;
+}
+
+img,
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+input,
+button {
+    font: inherit;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+:root {
+    --color-orange: #ff6900;
+    --color-white:  #ffffff;
+
+    --border-radius-button: 9999px;
+
+    --font-family-base: 'Nanito', sans-serif;
+    --font-family-secondary: 'Roboto', sans-serif;
+}
