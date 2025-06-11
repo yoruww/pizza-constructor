@@ -61,6 +61,11 @@ video {
     height: auto;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 ul,
 ol {
     list-style: none;
@@ -71,7 +76,7 @@ button {
     font: inherit;
     cursor: pointer;
     background: none;
-    border: none;
+    border: 0;
 }
 
 :root {
@@ -82,4 +87,20 @@ button {
 
     --font-family-base: 'Nanito', sans-serif;
     --font-family-secondary: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 9rem;
+    background-color: var(--color-white); 
+    font-family: var(--font-family-base);
+    column-gap: 1.25rem;
+} 
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
 }
