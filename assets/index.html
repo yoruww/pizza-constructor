@@ -1,23 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza constructor</title>
+    <title>Конструктор пиццы</title>
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="icon" href="/images/ico.png" type="image.png">
 </head>
 <body>
     <header class="header">
         <div class="left">
-            <a class="header-logo" href="/assets/index.html">PPIZZA</a>  
-            <div class="city">Gomel</div>
-            <div class="phone">7766</div>
-        </div>  
+            <a class="header-logo" href="/assets/index.html">PPIZZA</a>
+            <div class="delivery-info">  
+                <div class="delivery-city">Доставка пиццы <span class="city">Гомель</span></div>
+                <div class="delivery-subinfo"><span>30 мин</span> • <span>4.87</span><span class="star">⭐</span></div>
+            </div>
+            <div class="phone">
+                <div class="phone-number">7766</div>
+                <div class="phone-text">Звонок по телефону</div>
+            </div>  
+        </div>     
         <div class="right">
-            <button class="login-button">Login</button>
+            <button class="login-button">Войти</button>
         </div>
     </header>
+    <nav class="nav-bar">
+        <ul class="nav-menu-list">
+            <li><a href="#">Сытные пиццы</a></li>
+            <li><a href="#">Пиццы</a></li>
+            <li><a href="#">Комбо</a></li>
+            <li><a href="#">Закуски</a></li>
+            <li><a href="#">Коктейли</a></li>
+            <li><a href="#">Кофе</a></li>
+            <li><a href="#">Напитки</a></li>
+            <li><a href="#">Десерты</a></li>
+            <li><a href="#">Соусы</a></li>
+        </ul>
+        <button class="cart-button">Корзина</button>
+    </nav>
+
     <script src="./scripts/main.js" type="module" defer></script>
 </body>
 </html>
