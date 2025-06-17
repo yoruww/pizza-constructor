@@ -1,87 +1,3 @@
-@font-face {
-    font-family: 'Nunito';
-    src: url('/fonts/Nunito-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Nunito';
-    src: url('/fonts/Nunito-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Nunito';
-    src: url('/fonts/Nunito-SemiBold.woff2') format('woff2');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('/fonts/Roboto-ExtraLight.woff2') format('woff2');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-::before,
-::after {
-    box-sizing: border-box;
-}
-
-html {
-    height: 100%;
-    margin: 0;
-    scrollbar-gutter: stable;
-    scroll-behavior: smooth;
-    line-height: 1.5;
-}
-
-body {
-    min-height: 100%;
-}
-
-img,
-video {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.div {
-    background-color: inherit;
-}
-
-ul,
-ol {
-    list-style: none;
-}
-
-input,
-button {
-    font: inherit;
-    cursor: pointer;
-    background: none;
-    border: 0;
-}
-
 :root {
     --color-orange: #ff6900;
     --color-white: #ffffff;
@@ -90,22 +6,27 @@ button {
 
     --border-radius-button: 9999px;
 
+    --font-ingredients: 1rem 'Roboto', sans-serif;
     --font-family-base: 'Nunito', sans-serif;
-    --font-family-secondary: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+    
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 10rem 0 10rem;
     background-color: var(--color-white); 
     font-family: var(--font-family-base);
     column-gap: 1.25rem;
     flex-wrap: wrap;
 } 
 
-.header-left {
+.header-info {
     display: flex;
     align-items: flex-start;
     column-gap: 3.5rem;
@@ -162,7 +83,7 @@ header {
     color: #999999;    
 }
 
-.header-right {
+.header-auth {
     display: flex;
     align-items: center;
 }
@@ -181,7 +102,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.3rem 10rem;
     background-color: var(--color-white);
     font-family: var(--font-family-base);
     flex-wrap: wrap;
@@ -214,24 +134,24 @@ header {
 
 }
 
-.container {
+.pizza-constructor {
     display: grid;
     grid-template-rows: auto auto;
     border-radius: 20px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    margin: 2rem 10rem;
+    margin-top: 2rem;
     padding: 2rem;
     gap: 2rem;
     font-family: var(--font-family-base);
 }
 
-.container-top {
+.pizza-constructor_header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
 
-.container-top-left {
+.pizza-constructor_header_order-summary {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -240,7 +160,7 @@ header {
 
 }
 
-.container-title {
+.pizza-constructor_title {
     font-weight: 500;
     font-size: 1.8rem;
     color: var(--color-black);
@@ -253,30 +173,29 @@ header {
     color: var(--color-white);
 }
 
-.container-top-right {
+.pizza-constructor_preview {
     display: flex;
     justify-self: center;
     align-items: center;
 }
 
-.container-top-right img {
+.pizza-constructor_preview img {
     width: 26rem;
     height: auto;
 }
 
-.container-bottom {
+.pizza-constructor_ingredients {
     display: grid;
     grid-template-columns: 1fr;
 }
 
-.ingredients {
+.ingredients-grid {
   display: grid;
   grid-template-rows: repeat(4, auto);
   grid-template-columns: repeat(4, 1fr);
   grid-auto-flow: column;
   gap: 1rem 2rem;
-  font-family: var(--font-family-secondary);
-  
+  font: var(--font-ingredients);
 }
 
 .ingredient-button {
@@ -285,8 +204,6 @@ header {
     border-radius: var(--border-radius-button);
     padding: 0.5rem 1rem;
     font-weight: 200;
-    font-size: 1rem;
     text-align: center;
 }
-
 

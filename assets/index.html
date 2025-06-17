@@ -4,74 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Конструктор пиццы</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/fonts.css">
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="icon" href="/images/ico.png" type="image.png">
 </head>
 <body>
-    <header class="header">
-        <div class="header-left">
-            <a class="header-logo" href="/assets/index.html">PPIZZA</a>
-            <div class="delivery-info">  
-                <div class="delivery-city">Доставка пиццы <span class="city">Гомель</span></div>
-                <div class="delivery-subinfo"><span>30 мин</span> • <span>4.87</span><span class="star">⭐</span></div>
+     <div class="container">  
+        <header class="header">
+            <div class="header-info">
+                <a class="header-logo" href="/assets/index.html">PPIZZA</a>
+                <div class="delivery-info">  
+                    <div class="delivery-city">Доставка пиццы <span class="city">Гомель</span></div>
+                    <div class="delivery-subinfo"><span>30 мин</span> • <span>4.87</span><span class="star">⭐</span></div>
+                </div>
+                <div class="phone">
+                    <div class="phone-number">7766</div>
+                    <div class="phone-text">Звонок по телефону</div>
+                </div>  
+            </div>     
+            <div class="header-auth">
+                <button class="login-button">Войти</button>
             </div>
-            <div class="phone">
-                <div class="phone-number">7766</div>
-                <div class="phone-text">Звонок по телефону</div>
-            </div>  
-        </div>     
-        <div class="header-right">
-            <button class="login-button">Войти</button>
-        </div>
-    </header>
+        </header>
 
-    <nav class="nav-bar">
-        <ul class="nav-menu-list">
-            <li><a href="#">Сытные пиццы</a></li>
-            <li><a href="#">Пиццы</a></li>
-            <li><a href="#">Комбо</a></li>
-            <li><a href="#">Закуски</a></li>
-            <li><a href="#">Коктейли</a></li>
-            <li><a href="#">Кофе</a></li>
-            <li><a href="#">Напитки</a></li>
-            <li><a href="#">Десерты</a></li>
-            <li><a href="#">Соусы</a></li>
-        </ul>
-        <button class="cart-button">Корзина</button>
-    </nav>
+        <nav class="nav-bar">
+            <ul class="nav-menu-list">
+                <li><a href="#">Сытные пиццы</a></li>
+                <li><a href="#">Пиццы</a></li>
+                <li><a href="#">Комбо</a></li>
+                <li><a href="#">Закуски</a></li>
+                <li><a href="#">Коктейли</a></li>
+                <li><a href="#">Кофе</a></li>
+                <li><a href="#">Напитки</a></li>
+                <li><a href="#">Десерты</a></li>
+                <li><a href="#">Соусы</a></li>
+            </ul>
+            <button class="cart-button">Корзина</button>
+        </nav>
 
-    <section class="container">
-        <div class="container-top">
-            <div class="container-top-left">
-                <h1 class="container-title">Собери свою пиццу</h1>   
-                <button class="to-cart-button">В корзину</button> 
+        <section class="pizza-constructor">
+            <div class="pizza-constructor_header">
+                <div class="pizza-constructor_header_order-summary">
+                    <h1 class="pizza-constructor_title">Собери свою пиццу</h1>   
+                    <button class="to-cart-button">В корзину</button> 
+                </div>
+                <div class="pizza-constructor_preview">
+                    <img src="../images/pizza.png" alt="Pizza">
+                </div>
             </div>
-            <div class="container-top-right">
-                <img src="https://media.dodostatic.net/image/r:292x292/11ee7d616b6eac0d9d1151039f788394.jpg" alt="изображение пицца">
+            <div class="pizza-constructor_ingredients">
+                <div class="ingredients-grid">
+                        <button class="ingredient-button">Тонкое</button>
+                        <button class="ingredient-button">Толстое</button>
+                        <button class="ingredient-button">Безглютеновое</button>
+                        <button class="ingredient-button">Цельнозерновое</button>
+                        <button class="ingredient-button">Пeпперони</button>
+                        <button class="ingredient-button">Курица</button>
+                        <button class="ingredient-button">Ветчина</button>
+                        <button class="ingredient-button">Бекон</button>
+                        <button class="ingredient-button">Сыр</button>
+                        <button class="ingredient-button">Лук</button>
+                        <button class="ingredient-button">Перец</button>
+                        <button class="ingredient-button">Креветки</button>
+                        <button class="ingredient-button">Томатный</button>
+                        <button class="ingredient-button">Чесночный</button>
+                        <button class="ingredient-button">Сырный</button>
+                        <button class="ingredient-button">Барбекю</button>
+                </div>
             </div>
-        </div>
-        <div class="container-bottom">
-            <div class="ingredients">
-                    <button class="ingredient-button">Тонкое</button>
-                    <button class="ingredient-button">Толстое</button>
-                    <button class="ingredient-button">Безглютеновое</button>
-                    <button class="ingredient-button">Цельнозерновое</button>
-                    <button class="ingredient-button">Пeпперони</button>
-                    <button class="ingredient-button">Курица</button>
-                    <button class="ingredient-button">Ветчина</button>
-                    <button class="ingredient-button">Бекон</button>
-                    <button class="ingredient-button">Сыр</button>
-                    <button class="ingredient-button">Лук</button>
-                    <button class="ingredient-button">Перец</button>
-                    <button class="ingredient-button">Креветки</button>
-                    <button class="ingredient-button">Томатный</button>
-                    <button class="ingredient-button">Чесночный</button>
-                    <button class="ingredient-button">Сырный</button>
-                    <button class="ingredient-button">Барбекю</button>
-            </div>
-        </div>
-    </section>
-
+        </section>
+    </div>     
     <script src="./scripts/main.js" type="module" defer></script>
 </body>
 </html>
