@@ -23,6 +23,7 @@ header {
     background-color: var(--color-white); 
     font-family: var(--font-family-base);
     column-gap: 1.25rem;
+    margin-top: 1.5rem;
     flex-wrap: wrap;
 } 
 
@@ -174,12 +175,14 @@ header {
 }
 
 .pizza-constructor_preview {
-    display: flex;
-    justify-self: center;
-    align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .pizza-constructor_preview img {
+    display: block;
     width: 26rem;
     height: auto;
 }
