@@ -215,3 +215,16 @@ header {
     font-weight: 600;
     color: var(--color-orange);
 }
+
+.order-item {
+  background-color: var(--color-pale-gray);
+  border-radius: var(--border-radius-button);
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.4rem;
+  display: inline-block;
+  font: var(--font-ingredients);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
