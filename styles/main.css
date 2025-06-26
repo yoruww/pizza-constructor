@@ -185,6 +185,7 @@ header {
     display: block;
     width: 26rem;
     height: auto;
+    visibility: hidden;
 }
 
 .pizza-constructor_ingredients {

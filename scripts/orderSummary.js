@@ -1,3 +1,5 @@
+import { updateTotal } from './totalPriceGetting.js';
+
 export function initOrderSummary() {
   const cartButton = document.querySelector('.to-cart-button');
 
@@ -5,24 +7,34 @@ export function initOrderSummary() {
   summaryContainer.classList.add('order-summary');
   cartButton.parentNode.insertBefore(summaryContainer, cartButton);
 
+  const singleGroups = ['base', 'sauce'];
+
   document.addEventListener('click', (event) => {
     const clicked = event.target;
 
     if (clicked.matches('.ingredient-button')) {
       const label = clicked.dataset.label;
+      const group = clicked.dataset.group;
       const isSelected = clicked.classList.contains('selected');
+
+      if (singleGroups.includes(group)) {
+        removeGroupFromSummary(group); 
+      }
 
       if (isSelected) {
         addToSummary(label);
       } else {
         removeFromSummary(label);
       }
+
+      updateTotal(); 
     }
 
     if (clicked.matches('.order-item')) {
       const label = clicked.dataset.label;
       removeFromSummary(label);
       deselectButton(label);
+      updateTotal(); 
     }
   });
 
@@ -44,6 +56,13 @@ export function initOrderSummary() {
     });
   }
 
+  function removeGroupFromSummary(group) {
+    document.querySelectorAll(`.ingredient-button[data-group="${group}"]`).forEach(btn => {
+      const label = btn.dataset.label;
+      removeFromSummary(label);
+    });
+  }
+
   function deselectButton(label) {
     document.querySelectorAll('.ingredient-button').forEach(btn => {
       if (btn.dataset.label === label) {
@@ -52,4 +71,3 @@ export function initOrderSummary() {
     });
   }
 }
-
