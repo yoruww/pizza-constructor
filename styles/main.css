@@ -124,7 +124,7 @@ header {
     color:var(--color-orange)
 }
 
-.cart-button {
+/* .cart-button {
     background-color: var(--color-orange);
     color: var(--color-white);
     border-radius: var(--border-radius-button);
@@ -133,7 +133,7 @@ header {
     font-weight: 500;
     font-size: 1rem;
 
-}
+} */
 
 .pizza-constructor {
     display: grid;
@@ -167,7 +167,7 @@ header {
     color: var(--color-black);
 }
 
-.to-cart-button {
+.order-button {
     background-color: var(--color-orange);
     border-radius: var(--border-radius-button);
     padding: 1rem 1.8rem;

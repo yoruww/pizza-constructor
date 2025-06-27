@@ -1,7 +1,7 @@
 import { updateTotal } from './totalPriceGetting.js';
 
 export function initOrderSummary() {
-  const cartButton = document.querySelector('.to-cart-button');
+  const cartButton = document.querySelector('.order-button');
 
   const summaryContainer = document.createElement('div');
   summaryContainer.classList.add('order-summary');
@@ -33,7 +33,7 @@ export function initOrderSummary() {
     if (clicked.matches('.order-item')) {
       const label = clicked.dataset.label;
       removeFromSummary(label);
-      deselectButton(label);
+      deselectButton(label); 
       updateTotal(); 
     }
   });

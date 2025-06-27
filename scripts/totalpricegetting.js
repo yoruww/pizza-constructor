@@ -22,7 +22,7 @@
 
 export function initTotalPriceGetting() {
 
-  const cartButton = document.querySelector('.to-cart-button');
+  const cartButton = document.querySelector('.order-button');
   if (!cartButton) return;
 
   document.addEventListener('click', (event) => {
@@ -35,7 +35,7 @@ export function initTotalPriceGetting() {
 }
 
 export function updateTotal () {
-    const cartButton = document.querySelector('.to-cart-button');
+    const cartButton = document.querySelector('.order-button');
     const selectedButton = document.querySelectorAll('.ingredient-button.selected');
     let totalprice = 0;
     
@@ -45,5 +45,5 @@ export function updateTotal () {
         totalprice += price;
      });
 
-     cartButton.textContent = totalprice > 0 ? `В корзину за ${totalprice} ₽` : 'В корзину';
+     cartButton.textContent = totalprice > 0 ? `Заказать за ${totalprice} ₽` : 'В корзину';
 }
