@@ -172,13 +172,15 @@ header {
     border-radius: var(--border-radius-button);
     padding: 1rem 1.8rem;
     color: var(--color-white);
+    opacity: 0.5;
+    cursor: auto;
 }
 
 .pizza-constructor_preview {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  width: fit-content;
-  margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   width: fit-content;
+   margin: 0 auto;
 }
 
 .pizza-constructor_preview img {
@@ -218,14 +220,17 @@ header {
 }
 
 .order-item {
-  background-color: var(--color-pale-gray);
-  border-radius: var(--border-radius-button);
-  padding: 0.5rem 1rem;
-  margin-bottom: 0.4rem;
-  display: inline-block;
-  font: var(--font-ingredients);
-  font-weight: 500;
-  cursor: pointer;
+    background-color: var(--color-pale-gray);
+    border-radius: var(--border-radius-button);
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.4rem;
+    display: inline-block;
+    font: var(--font-ingredients);
+    font-weight: 500;
 }
 
+.order-button.active {
+    opacity: 1;
+    cursor: pointer;
+}
 
