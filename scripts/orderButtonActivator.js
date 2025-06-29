@@ -7,7 +7,6 @@ export function initOrderButtonActivator() {
     const selectedGroups = selected.map(btn => btn.dataset.group);
     
     const allGroupsSelected = groups.every(group => selectedGroups.includes(group));
-
     orderButton.classList.toggle('active', allGroupsSelected);
   });
 }
