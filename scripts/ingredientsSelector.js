@@ -11,7 +11,7 @@ export function initIngredientsSelector() {
       if (singleGroups.includes(group)) {
         handleSingleSelect(group, button);
       } else if (multiGroups.includes(group)) {
-        button.classList.toggle('selected');
+        handleMultiSelect(group, button);
       }
     });
   });
@@ -27,4 +27,16 @@ export function initIngredientsSelector() {
       clickedButton.classList.add('selected');
     }
   }
+
+   function handleMultiSelect (group, clickedButton) {
+    const selected = document.querySelectorAll(`.ingredient-button.selected[data-group="${group}"]`);
+    const IsAlreadySelected = clickedButton.classList.contains ('selected');
+
+    if (IsAlreadySelected) {
+      clickedButton.classList.remove('selected');
+    } else if (selected.length < 2) {
+      clickedButton.classList.add('selected');
+    }
+   }
+
 }
